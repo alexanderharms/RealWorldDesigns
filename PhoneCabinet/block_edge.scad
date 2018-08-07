@@ -1,9 +1,5 @@
-module square_cutloss(size, cut_loss) {
-    
-    translate([-cut_loss, -cut_loss]){
-        square([size[0]+2*cut_loss, size[1]+2*cut_loss]);
-    }
-}
+use <square_cutloss.scad>;
+
 module block_edge(length, height, border, cut_loss, pos_neg, num_blocks_input){
     
     div_by_2 = num_blocks_input % 2;
